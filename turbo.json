@@ -1,6 +1,6 @@
 {
     "$schema": "./turbo-schema.json",
-    "task":{
+    "tasks":{
         "build": {
             "dependsOn":["^build"], // Build all dependencies first
             "outputs":["./next/**","!.next**"] // cache the .next folder but ignore any .next folder in dependencies
