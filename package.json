@@ -16,5 +16,11 @@
   "dependencies": {
     "turbo": "^2.8.17"
   },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp",
+      "unrs-resolver"
+    ]
+  },
   "packageManager": "pnpm@10.15.0"
 }
