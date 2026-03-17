@@ -10,7 +10,7 @@
     "@acme/docs": {
       "routing": [
         {
-          "paths": ["/docs", "/docs/:path*"]
+          "paths": ["/docs", "/docs/:path*","/documentation"]
         }
       ],
       "development": {
