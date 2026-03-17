@@ -2,6 +2,22 @@
   "$schema": "https://openapi.vercel.sh/microfrontends.json",
   "applications": {
     "@acme/marketing": {
+       "routing": [
+        {
+          "paths": ["/marketing", "/marketing/:path*"]
+        }
+      ],
+      "development": {
+        "fallback": "http://localhost:3000",
+        "local": 3000
+      }
+    },
+    "acme-platform-marketing": {
+       "routing": [
+        {
+          "paths": ["/marketing", "/marketing/:path*"]
+        }
+      ],
       "development": {
         "fallback": "acme-platform-marketing.vercel.app",
         "local": 3000
