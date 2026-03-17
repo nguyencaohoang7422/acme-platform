@@ -1,4 +1,4 @@
-import type { NextRequest } from "next/server";
+// import type { NextRequest } from "next/server";
  
 export interface AuthToken {
   userId: string;
@@ -6,11 +6,11 @@ export interface AuthToken {
   exp: number;
 }
  
-export function getAuthToken(request: NextRequest): string | undefined {
+export function getAuthToken(request: any): string | undefined {
   return request.cookies.get("auth-token")?.value;
 }
  
-export function isAuthenticated(request: NextRequest): boolean {
+export function isAuthenticated(request: any): boolean {
   const token = getAuthToken(request);
   if (!token) return false;
   // In a real app, verify the JWT here
