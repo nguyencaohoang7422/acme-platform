@@ -19,10 +19,11 @@
         }
       ],
       "development": {
-        "fallback": "acme-platform-marketing.vercel.app",
+        "fallback": "http://localhost:3000",
         "local": 3000
       }
     },
+   
     "@acme/docs": {
       "routing": [
         {
