@@ -1,4 +1,4 @@
-import { Header } from '@acme/ui';
+import { Header } from "@acme/ui";
 import type { Metadata } from "next";
 import "./globals.css";
  
@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-gray-50">
+      <body className="min-h-screen bg-gray-50 flex flex-col">
         <Header />
         <main className="p-8">{children}</main>
       </body>
