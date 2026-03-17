@@ -27,5 +27,8 @@
         "local": 3002
       }
     }
-  }
+},
+    "options":{
+        "localProxyPort": 3042
+    }
 }
