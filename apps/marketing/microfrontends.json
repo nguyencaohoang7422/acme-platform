@@ -3,6 +3,12 @@
   "applications": {
     "@acme/marketing": {
       "development": {
+        "fallback": "http://localhost:3000",
+        "local": 3000
+      }
+    },
+    "acme-platform-marketing": {
+      "development": {
         "fallback": "acme-platform-marketing.vercel.app",
         "local": 3000
       }
